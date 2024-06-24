@@ -8,19 +8,32 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatSidenav } from '@angular/material/sidenav';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './componentes/header/header.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { SideNavComponent } from './componentes/side-nav/side-nav.component';
+import { HomeComponent } from './web/home/home.component';
+import { NosotrosComponent } from './web/nosotros/nosotros.component';
+import { ContactoComponent } from './web/contacto/contacto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SideNavComponent,
+    HomeComponent,
+    NosotrosComponent,
+    ContactoComponent
   ],
   imports: [
     MatSlideToggleModule,
+    MatMenuModule,
+    MatTabsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -28,6 +41,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
+    MatSidenav,
     MatListModule
   ],
   providers: [

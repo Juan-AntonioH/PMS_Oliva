@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <mat-nav-list class="m-0">
+          <a
+            class="underline"
+            mat-list-item
+            *ngFor="let link of links"
+            [routerLinkActiveOptions]="{ exact: true }"
+            routerLink="{{ link.url }}"
+            routerLinkActive="active"
+            (click)="onClose()"
+          >
+            <span class="nav-caption h5">{{
+             link.ruta
+            }}</span>
+          </a>
+          <div class="text-center mt-3">
+            <a href="https://www.google.com" target="_blank">
+              <button class="btn btn-rounded btn-primary btn-sm">
+                <span class="h6 text-white font-weight-bold">
+                  Google</span>
+              </button>
+            </a>
+          </div>
+        </mat-nav-list>
+      </div>
+    </div>
+  </div>
