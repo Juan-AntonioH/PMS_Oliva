@@ -30,7 +30,7 @@
         alt="Logotipo"
       />
     </a>
-    <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" >
+    <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" [tabPanel]="tabPanel">
           <a
           mat-tab-link
           disableRipple
@@ -40,6 +40,7 @@
          {{link.ruta}}
           </a>
     </nav>
+    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
     <div class="ms-auto d-block d-sm-block d-lg-none">
       <button class="text-dark bg-white border-0" mat-button (click)="onToggleSidenav()">
         <mat-icon>menu</mat-icon>

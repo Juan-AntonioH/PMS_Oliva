@@ -17,9 +17,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { SideNavComponent } from './componentes/side-nav/side-nav.component';
-import { HomeComponent } from './web/home/home.component';
-import { NosotrosComponent } from './web/nosotros/nosotros.component';
-import { ContactoComponent } from './web/contacto/contacto.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 @NgModule({
   declarations: [
