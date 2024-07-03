@@ -1,0 +1,276 @@
+//Colors
+
+@function getColorKeys() {
+    @return map-keys($colors);
+}
+
+@function getColorVariants($key) {
+    @return map-get($colors, $key);
+}
+
+@function getColor($key, $index) {
+    @return nth(map-get($colors, $key), $index+1);
+}
+
+//Font-sizes
+@function getFontSizeKeys() {
+    @return map-keys($font-sizes);
+}
+
+@function getFontSizeValue($key) {
+    @return map-get($font-sizes, $key);
+}
+
+//Font-Families
+
+@function getFontFamilyKeys() {
+    @return map-keys($font-families);
+}
+
+@function getFontFamilyValue($key) {
+    @return map-get($font-families, $key);
+}
+
+//Font-Weights
+
+@function getFontWeightKeys() {
+    @return map-keys($font-weights);
+}
+
+@function getFontWeightValue($key) {
+    @return map-get($font-weights, $key);
+}
+
+//Font-Styles
+
+@function getFontStyleKeys() {
+    @return map-keys($font-styles);
+}
+
+@function getFontStyleValue($key) {
+    @return map-get($font-styles,$key);
+}
+
+//Text-Alings
+
+@function getTextAlignKeys() {
+    @return map-keys($text-aligns);
+}
+
+@function getTextAlignValue($key) {
+    @return map-get($text-aligns, $key);
+}
+
+//Text-Decorations
+
+@function getTextDecorationKeys() {
+    @return map-keys($text-decorations);
+}
+
+@function getTextDecorationValue($key) {
+    @return map-get($text-decorations, $key);
+}
+
+//Text-Transforms
+
+@function getTextTransformKeys() {
+    @return map-keys($text-transforms);
+}
+
+@function getTextTransformValue($key) {
+    @return map-get($text-transforms, $key);
+}
+
+//List-Styles
+
+@function getListStyleKeys() {
+    @return map-keys($list-styles);
+}
+
+@function getListStyleValue($key) {
+    @return map-get($list-styles, $key);
+}
+
+//Border-Width
+
+@function getBorderWidthKeys() {
+    $resultado: ();
+
+    @for $i from 0 to length($border-width) {
+        $resultado: append($resultado, $i);
+    }
+
+    @return $resultado;
+}
+
+@function getBorderWidthValue($key) {
+    @return nth($border-width, $key);
+}
+
+//Border-Radius
+
+@function getBorderRadiusKeys() {
+    $resultado: ();
+
+    @for $i from 0 to length($border-radius) {
+        $resultado: append($resultado, $i);
+    }
+
+    @return $resultado;
+}
+
+@function getBorderRadiusValue($key) {
+    @return nth($border-radius, $key);
+}
+
+//Border-Styles
+@function getBorderStyleKeys() {
+    @return map-keys($border-styles);
+}
+
+@function getBorderStyleValue($key) {
+    @return map-get($border-styles, $key);
+}
+
+//Opacities
+
+@function getOpacityKeys() {
+    $resultado: ();
+
+    @for $i from 0 to length($opacities) {
+        $resultado: append($resultado, $i);
+    }
+
+    @return $resultado;
+}
+
+@function getOpacityValue($key) {
+    @return nth($opacities, $key);
+}
+
+//Shadows
+
+@function getShadowKeys() {
+    @return map-keys($shadows);
+}
+
+@function getShadowValue($key) {
+    @return map-get($shadows, $key);
+}
+
+//Margins
+
+@function getMarginKeys() {
+    $resultado: ();
+
+    @for $i from 0 to length($margins) {
+        $resultado: append($resultado, $i);
+    }
+
+    @return $resultado;
+}
+
+@function getMarginValue($key) {
+    @return nth($margins, $key);
+}
+
+//Paddings
+
+@function getPaddingKeys() {
+    $resultado: ();
+
+    @for $i from 0 to length($paddings) {
+        $resultado: append($resultado, $i);
+    }
+
+    @return $resultado;
+}
+
+@function getPaddingValue($key) {
+    @return nth($paddings, $key);
+}
+
+//Widths
+
+@function getWidthKeys() {
+    @return map-keys($widths);
+}
+
+@function getWidthValue($key) {
+    @return map-get($widths, $key);
+}
+
+//Heights
+
+@function getHeightKeys() {
+    @return map-keys($heights);
+}
+
+@function getHeightValue($key) {
+    @return map-get($heights, $key);
+}
+
+//OverFlows
+
+@function getOverflowKeys() {
+    @return map-keys($overflows);
+}
+
+@function getOverflowValue($key) {
+    @return map-get($overflows, $key);
+}
+
+//Visibilities
+
+@function getVisibilityKeys() {
+    @return map-keys($visibilities);
+}
+
+@function getVisibilityValue($key) {
+    @return map-get($visibilities, $key);
+}
+
+//Positions
+
+@function getPositionKeys() {
+    @return map-keys($positions);
+}
+
+@function getPositionValue($key) {
+    @return map-get($positions, $key);
+}
+
+//Displays
+@function getDisplayKeys() {
+    @return map-keys($displays);
+}
+
+@function getDisplayValue($key) {
+    @return map-get($displays, $key);
+}
+
+//Gaps
+
+@function getGapKeys() {
+    $resultado: ();
+
+    @for $i from 0 to length($gaps) {
+        $resultado: append($resultado, $i);
+    }
+
+    @return $resultado;
+}
+
+@function getGapValue($key) {
+    @return nth($gaps, $key+1);
+}
+
+//BreakPoints
+
+@function getBreakPointKeys() {
+    @return map-keys($break-points);
+}
+
+@function getBreakPointValue($key) {
+    @return map-get($break-points, $key);
+}

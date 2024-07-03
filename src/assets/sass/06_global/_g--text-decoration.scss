@@ -1,0 +1,14 @@
+@each $key in getTextDecorationKeys() {
+    .g--text-decoration-#{$key}{
+        text-decoration: getTextDecorationValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getTextDecorationKeys() {
+            .g--text-decoration-#{$key}\@#{$typeBreakPoint}{
+                text-decoration: getTextDecorationValue($key);
+            }
+        }
+    }
+}

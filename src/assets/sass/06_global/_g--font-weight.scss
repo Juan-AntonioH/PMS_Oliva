@@ -1,0 +1,14 @@
+@each $key in getFontWeightKeys() {
+    .g--font-weight-#{$key}{
+        font-weight: getFontWeightValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getFontWeightKeys() {
+            .g--font-weight-#{$key}\@#{$typeBreakPoint}{
+                font-weight: getFontWeightValue($key);
+            }
+        }
+    }
+}

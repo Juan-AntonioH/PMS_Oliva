@@ -1,4 +1,4 @@
-import { Component, OnInit,EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, Input } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,14 +6,10 @@ import { Component, OnInit,EventEmitter, Output } from '@angular/core';
   styleUrl: './side-nav.component.css'
 })
 export class SideNavComponent {
-  links = [
-    {ruta: 'HOME' , url: '/' },
-    {ruta: 'NOSOTROS' , url: '/nosotros'},
-    {ruta: 'CONTACTO', url: '/contacto' },
-]
-@Output() CloseSidenav = new EventEmitter<void>();
+  @Input() links!: any
+  @Output() CloseSidenav = new EventEmitter<void>();
   constructor() { }
- onClose(){
+  onClose() {
     this.CloseSidenav.emit();
   }
   ngOnInit(): void {

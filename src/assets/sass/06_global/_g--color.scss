@@ -1,0 +1,19 @@
+@each $colortype in getColorKeys() {
+    @for $contador from 0 to length(getColorVariants($colortype)){
+        .g--color-#{$colortype}-#{$contador}{
+            color: getColor($colortype,$contador); 
+        }
+    }
+}
+
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $colortype in getColorKeys() {
+            @for $contador from 0 to length(getColorVariants($colortype)) {
+                .g--color-#{$colortype}-#{$contador}\@#{$typeBreakPoint} {
+                    color: getColor($colortype, $contador);
+                }
+            }
+        }
+    }
+}

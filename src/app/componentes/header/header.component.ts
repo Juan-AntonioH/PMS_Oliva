@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,16 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  links = [
-    { ruta: 'HOME',  url: '/' },
-    { ruta: 'NOSOTROS',  url: '/nosotros' },
-    { ruta: 'CONTACTO',  url: '/contacto' },
-  ];
-    @Output() SidenavToggle = new EventEmitter<void>();
-    constructor(public router: Router) { }
-    onToggleSidenav() {
-      this.SidenavToggle.emit();
-    }
-    ngOnInit(): void {
-    }
+  @Input() links!: any
+  @Output() SidenavToggle = new EventEmitter<void>();
+  constructor(public router: Router) { }
+  onToggleSidenav() {
+    this.SidenavToggle.emit();
+  }
+  ngOnInit(): void {
+  }
 }

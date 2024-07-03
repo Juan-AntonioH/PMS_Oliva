@@ -1,0 +1,14 @@
+@each $key in getPositionKeys() {
+    .g--position-#{$key}{
+        position: getPositionValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getPositionKeys() {
+            .g--position-#{$key}\@#{$typeBreakPoint}{
+                position: getPositionValue($key);
+            }
+        }
+    }
+}

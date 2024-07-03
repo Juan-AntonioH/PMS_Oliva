@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pms_oliva';
+  
+  links = [
+    { ruta: 'HOME', url: '/' },
+    { ruta: 'NOSOTROS', url: '/nosotros' },
+    { ruta: 'CONTACTO', url: '/contacto' },
+  ];
 }

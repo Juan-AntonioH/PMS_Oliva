@@ -1,0 +1,26 @@
+@each $key in getWidthKeys() {
+    .g--width-#{$key}{
+        width: getWidthValue($key);
+    }
+    .g--min-width-#{$key}{
+        min-width: getWidthValue($key);
+    }
+    .g--max-width-#{$key}{
+        max-width: getWidthValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getWidthKeys() {
+            .g--width-#{$key}\@#{$typeBreakPoint}{
+                width: getWidthValue($key);
+            }
+            .g--min-width-#{$key}\@#{$typeBreakPoint}{
+                min-width: getWidthValue($key);
+            }
+            .g--max-width-#{$key}\@#{$typeBreakPoint}{
+                max-width: getWidthValue($key);
+            }
+        }
+    }
+}

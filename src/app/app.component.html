@@ -1,10 +1,10 @@
-<app-header (SidenavToggle)="sidenav.toggle()"/>
-  <mat-sidenav-container>
-    <mat-sidenav #sidenav role="navigation" position="end" [fixedInViewport]="true">
-      <app-side-nav (CloseSidenav)="sidenav.close()"></app-side-nav>
-    </mat-sidenav>
-    <main>
-      <router-outlet/>
-    </main>
-    <!-- <app-footer></app-footer> -->
-  </mat-sidenav-container>
+<app-header [links]="links" (SidenavToggle)="sidenav.toggle()" />
+<mat-sidenav-container>
+  <mat-sidenav #sidenav role="navigation" position="end" [fixedInViewport]="true">
+    <app-side-nav [links]="links" (CloseSidenav)="sidenav.close()" />
+  </mat-sidenav>
+  <main>
+    <router-outlet />
+  </main>
+  <!-- <app-footer></app-footer> -->
+</mat-sidenav-container>

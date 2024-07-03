@@ -1,0 +1,103 @@
+@each $key in getMarginKeys() {
+
+    .g--margin-#{$key} {
+        margin: getMarginValue($key+1);
+    }
+
+    .g--margin-horizontal-#{$key} {
+        margin-left: getMarginValue($key+1);
+        margin-right: getMarginValue($key+1);
+    }
+
+    .g--margin-vertical-#{$key} {
+        margin-top: getMarginValue($key+1);
+        margin-bottom: getMarginValue($key+1);
+    }
+
+    .g--margin-top-#{$key} {
+        margin-top: getMarginValue($key+1);
+    }
+
+    .g--margin-bottom-#{$key} {
+        margin-bottom: getMarginValue($key+1);
+    }
+
+    .g--margin-left-#{$key} {
+        margin-left: getMarginValue($key+1);
+    }
+
+    .g--margin-right-#{$key} {
+        margin-right: getMarginValue($key+1);
+    }
+
+}
+
+.g--margin-right-auto {
+    margin-right: auto;
+}
+
+.g--margin-left-auto {
+    margin-left: auto;
+}
+
+.g--margin-top-auto {
+    margin-top: auto;
+}
+
+.g--margin-bottom-auto {
+    margin-bottom: auto;
+}
+
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getMarginKeys() {
+
+            .g--margin-#{$key}\@#{$typeBreakPoint} {
+                margin: getMarginValue($key+1);
+            }
+        
+            .g--margin-horizontal-#{$key}\@#{$typeBreakPoint} {
+                margin-left: getMarginValue($key+1);
+                margin-right: getMarginValue($key+1);
+            }
+        
+            .g--margin-vertical-#{$key}\@#{$typeBreakPoint} {
+                margin-top: getMarginValue($key+1);
+                margin-bottom: getMarginValue($key+1);
+            }
+        
+            .g--margin-top-#{$key}\@#{$typeBreakPoint} {
+                margin-top: getMarginValue($key+1);
+            }
+        
+            .g--margin-bottom-#{$key}\@#{$typeBreakPoint} {
+                margin-bottom: getMarginValue($key+1);
+            }
+        
+            .g--margin-left-#{$key}\@#{$typeBreakPoint} {
+                margin-left: getMarginValue($key+1);
+            }
+        
+            .g--margin-right-#{$key}\@#{$typeBreakPoint} {
+                margin-right: getMarginValue($key+1);
+            }
+        
+        }
+        
+        .g--margin-right-auto\@#{$typeBreakPoint} {
+            margin-right: auto;
+        }
+        
+        .g--margin-left-auto\@#{$typeBreakPoint} {
+            margin-left: auto;
+        }
+        
+        .g--margin-top-auto\@#{$typeBreakPoint} {
+            margin-top: auto;
+        }
+        
+        .g--margin-bottom-auto\@#{$typeBreakPoint} {
+            margin-bottom: auto;
+        }
+    }
+}

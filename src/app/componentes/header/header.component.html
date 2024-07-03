@@ -1,4 +1,4 @@
-  <!-- <mat-sidenav #drawer mode="over" class="mobile-nav-content">
+<!-- <mat-sidenav #drawer mode="over" class="mobile-nav-content">
     <mat-nav-list>
       <a mat-list-item routerLink="/" (click)="drawer.close()">Inicio</a>
       <a mat-list-item routerLink="/about" (click)="drawer.close()">Acerca de</a>
@@ -23,27 +23,20 @@
     </mat-toolbar>
   </mat-sidenav-content> -->
 
-  <mat-toolbar class="bg-white" id="header">
-    <a routerLink="/">
-      <img class="img-fluid mt-1"
-        src="assets/img/bootstrap.png"
-        alt="Logotipo"
-      />
+<mat-toolbar class="bg-white" id="header">
+  <a routerLink="/">
+    <img class="img-fluid mt-1" src="logo_pms1.png" alt="Logotipo" />
+  </a>
+  <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" [tabPanel]="tabPanel">
+    <a mat-tab-link disableRipple *ngFor="let link of links" [routerLink]="link.url"
+      [active]="router.isActive(link.url, true)">
+      {{link.ruta}}
     </a>
-    <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" [tabPanel]="tabPanel">
-          <a
-          mat-tab-link
-          disableRipple
-          *ngFor="let link of links"
-          [routerLink]="link.url"
-          [active]="router.isActive(link.url, true)">
-         {{link.ruta}}
-          </a>
-    </nav>
-    <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
-    <div class="ms-auto d-block d-sm-block d-lg-none">
-      <button class="text-dark bg-white border-0" mat-button (click)="onToggleSidenav()">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </div>
-  </mat-toolbar>
+  </nav>
+  <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
+  <div class="ms-auto d-block d-sm-block d-lg-none">
+    <button class="text-dark bg-white border-0" mat-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

@@ -1,0 +1,14 @@
+@each $key in getBorderStyleKeys() {
+    .g--border-style-#{$key}{
+        border-style: getBorderStyleValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getBorderStyleKeys() {
+            .g--border-style-#{$key}\@#{$typeBreakPoint}{
+                border-style: getBorderStyleValue($key);
+            }
+        }
+    }
+}

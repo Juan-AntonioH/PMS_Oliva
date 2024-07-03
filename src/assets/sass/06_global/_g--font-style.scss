@@ -1,0 +1,14 @@
+@each $key in getFontStyleKeys() {
+    .g--font-style-#{$key}{
+        font-style: getFontStyleValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getFontStyleKeys() {
+            .g--font-style-#{$key}\@#{$typeBreakPoint}{
+                font-style: getFontStyleValue($key);
+            }
+        }
+    }
+}

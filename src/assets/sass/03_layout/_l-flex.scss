@@ -1,0 +1,239 @@
+.l-flex{
+
+    display: flex;
+
+    //Direction 
+
+    &--direction-row{
+        flex-direction: row;
+    }
+
+    &--direction-column{
+        flex-direction: column;
+    }
+
+    &--direction-row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    &--direction-column-reverse{
+        flex-direction: column-reverse;
+    }
+
+    //Wrap 
+    &--wrap{
+        flex-wrap: wrap;
+    }
+    &--wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    &--nowrap{
+        flex-wrap: nowrap;
+    }
+
+    //Justify content
+    &--justify-content-end{
+        justify-content: flex-end;
+    }
+    
+    &--justify-content-start{
+        justify-content: flex-start;
+    }
+
+    &--justify-content-center{
+        justify-content: center;
+    }
+
+    &--justify-content-space-between{
+        justify-content: space-between;
+    }
+
+    &--justify-content-space-around{
+        justify-content: space-around;
+    }
+
+    &--justify-content-space-evenly{
+        justify-content: space-evenly;
+    }
+
+    //Align Content
+
+    &--align-content-end{
+        align-content: flex-end;
+    }
+    
+    &--align-content-start{
+        align-content: flex-start;
+    }
+
+    &--align-content-center{
+        align-content: center;
+    }
+
+    &--align-content-space-between{
+        align-content: space-between;
+    }
+
+    &--align-content-space-around{
+        align-content: space-around;
+    }
+
+    &--align-content-space-evenly{
+        align-content: space-evenly;
+    }
+
+    //Align Items
+    &--align-items-start{
+        align-items: flex-start;
+    }
+
+    &--align-items-end{
+        align-items: flex-end;
+    }
+
+    &--align-items-center{
+        align-items: center;
+    }
+
+    &--align-items-stretch{
+        align-items: stretch;
+    }
+
+    &--align-items-baseline{
+        align-items: baseline;
+    }
+
+//Gap
+    @each $gap in getGapKeys() {
+        &--gap-#{$gap}{
+            gap: getGapValue($gap);
+        }
+
+        &--horizontal-gap-#{$gap}{
+            row-gap: getGapValue($gap);
+        }
+
+        &--vertical-gap-#{$gap}{
+            column-gap: getGapValue($gap);
+        }
+    }
+
+
+    @each $typeBreakPoint in getBreakPointKeys() {
+        @media(min-width:getBreakPointValue($typeBreakPoint)) {
+            &--direction-row\@#{$typeBreakPoint}{
+                flex-direction: row;
+            }
+        
+            &--direction-column\@#{$typeBreakPoint}{
+                flex-direction: column;
+            }
+        
+            &--direction-row-reverse\@#{$typeBreakPoint}{
+                flex-direction: row-reverse;
+            }
+        
+            &--direction-column-reverse\@#{$typeBreakPoint}{
+                flex-direction: column-reverse;
+            }
+        
+            //Wrap 
+            &--wrap\@#{$typeBreakPoint}{
+                flex-wrap: wrap;
+            }
+            &--wrap-reverse\@#{$typeBreakPoint}{
+                flex-wrap: wrap-reverse;
+            }
+            &--nowrap\@#{$typeBreakPoint}{
+                flex-wrap: nowrap;
+            }
+        
+            //Justify content
+            &--justify-content-end\@#{$typeBreakPoint}{
+                justify-content: flex-end;
+            }
+            
+            &--justify-content-start\@#{$typeBreakPoint}{
+                justify-content: flex-start;
+            }
+        
+            &--justify-content-center\@#{$typeBreakPoint}{
+                justify-content: center;
+            }
+        
+            &--justify-content-space-between\@#{$typeBreakPoint}{
+                justify-content: space-between;
+            }
+        
+            &--justify-content-space-around\@#{$typeBreakPoint}{
+                justify-content: space-around;
+            }
+        
+            &--justify-content-space-evenly\@#{$typeBreakPoint}{
+                justify-content: space-evenly;
+            }
+        
+            //Align Content
+        
+            &--align-content-end\@#{$typeBreakPoint}{
+                align-content: flex-end;
+            }
+            
+            &--align-content-start\@#{$typeBreakPoint}{
+                align-content: flex-start;
+            }
+        
+            &--align-content-center\@#{$typeBreakPoint}{
+                align-content: center;
+            }
+        
+            &--align-content-space-between\@#{$typeBreakPoint}{
+                align-content: space-between;
+            }
+        
+            &--align-content-space-around\@#{$typeBreakPoint}{
+                align-content: space-around;
+            }
+        
+            &--align-content-space-evenly\@#{$typeBreakPoint}{
+                align-content: space-evenly;
+            }
+        
+            //Align Items
+            &--align-items-start\@#{$typeBreakPoint}{
+                align-items: flex-start;
+            }
+        
+            &--align-items-end\@#{$typeBreakPoint}{
+                align-items: flex-end;
+            }
+        
+            &--align-items-center\@#{$typeBreakPoint}{
+                align-items: center;
+            }
+        
+            &--align-items-stretch\@#{$typeBreakPoint}{
+                align-items: stretch;
+            }
+        
+            &--align-items-baseline\@#{$typeBreakPoint}{
+                align-items: baseline;
+            }
+        
+        //Gap
+            @each $gap in getGapKeys() {
+                &--gap-#{$gap}\@#{$typeBreakPoint}{
+                    gap: getGapValue($gap);
+                }
+        
+                &--horizontal-gap-#{$gap}\@#{$typeBreakPoint}{
+                    row-gap: getGapValue($gap);
+                }
+        
+                &--vertical-gap-#{$gap}\@#{$typeBreakPoint}{
+                    column-gap: getGapValue($gap);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@each $key in getOverflowKeys() {
+    .g--overflow-#{$key}{
+        overflow: getOverflowValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getOverflowKeys() {
+            .g--overflow-#{$key}\@#{$typeBreakPoint}{
+                overflow: getOverflowValue($key);
+            }
+        }
+    }
+}
