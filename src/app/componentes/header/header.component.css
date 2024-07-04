@@ -7,10 +7,20 @@ a {
 }
 
 ::ng-deep .mat-mdc-tab-link .mdc-tab__text-label {
-  color: rgba(0, 0, 0, 0.5) !important;
+font-weight: bold;
 }
 
 /* Cambiar el color del Active */
 ::ng-deep .mat-mdc-tab-link .mdc-tab-indicator__content--underline {
-  border-color: red !important;
+  border-color: var(--primary) !important;
+}
+
+.mat-toolbar{
+  background-color:antiquewhite
+}
+
+.mdc-tab:hover{
+  background-color: rgba(72, 173, 143, 0.3);
+  color:rgb(#48ad8f);
+  border-radius: 50px;
 }

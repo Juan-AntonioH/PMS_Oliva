@@ -23,9 +23,9 @@
     </mat-toolbar>
   </mat-sidenav-content> -->
 
-<mat-toolbar class="bg-white" id="header">
+<mat-toolbar class="g--background-color-tertiary" id="header">
   <a routerLink="/">
-    <img class="img-fluid mt-1" src="logo_pms1.png" alt="Logotipo" />
+    <img class="img-fluid mt-1" src="logo/logo_pms.webp" alt="Logotipo" />
   </a>
   <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" [tabPanel]="tabPanel">
     <a mat-tab-link disableRipple *ngFor="let link of links" [routerLink]="link.url"

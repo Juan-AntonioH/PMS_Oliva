@@ -20,6 +20,10 @@ import { SideNavComponent } from './componentes/side-nav/side-nav.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { ServiciosComponent } from './pages/servicios/servicios.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     SideNavComponent,
     HomeComponent,
     NosotrosComponent,
-    ContactoComponent
+    ContactoComponent,
+    ProyectosComponent,
+    ServiciosComponent,
+    ClientesComponent,
+    Error404Component
   ],
   imports: [
     MatSlideToggleModule,

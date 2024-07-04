@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pms_oliva';
-  
+
   links = [
-    { ruta: 'HOME', url: '/' },
+    { ruta: 'INICIO', url: '/' },
     { ruta: 'NOSOTROS', url: '/nosotros' },
+    { ruta: 'PROYECTOS', url: '/proyectos' },
+    { ruta: 'SERVICIOS', url: '/servicios' },
+    { ruta: 'CLIENTES', url: '/clientes' },
     { ruta: 'CONTACTO', url: '/contacto' },
   ];
 }

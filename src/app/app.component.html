@@ -1,5 +1,5 @@
 <app-header [links]="links" (SidenavToggle)="sidenav.toggle()" />
-<mat-sidenav-container>
+<mat-sidenav-container class="bg-white">
   <mat-sidenav #sidenav role="navigation" position="end" [fixedInViewport]="true">
     <app-side-nav [links]="links" (CloseSidenav)="sidenav.close()" />
   </mat-sidenav>
