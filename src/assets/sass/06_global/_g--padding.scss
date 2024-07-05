@@ -1,0 +1,103 @@
+@each $key in getPaddingKeys() {
+
+    .g--padding-#{$key} {
+        padding: getPaddingValue($key+1);
+    }
+
+    .g--padding-horizontal-#{$key} {
+        padding-left: getPaddingValue($key+1);
+        padding-right: getPaddingValue($key+1);
+    }
+
+    .g--padding-vertical-#{$key} {
+        padding-top: getPaddingValue($key+1);
+        padding-bottom: getPaddingValue($key+1);
+    }
+
+    .g--padding-top-#{$key} {
+        padding-top: getPaddingValue($key+1);
+    }
+
+    .g--padding-bottom-#{$key} {
+        padding-bottom: getPaddingValue($key+1);
+    }
+
+    .g--padding-left-#{$key} {
+        padding-left: getPaddingValue($key+1);
+    }
+
+    .g--padding-right-#{$key} {
+        padding-right: getPaddingValue($key+1);
+    }
+
+}
+
+.g--padding-right-auto {
+    padding-right: auto;
+}
+
+.g--padding-left-auto {
+    padding-left: auto;
+}
+
+.g--padding-top-auto {
+    padding-top: auto;
+}
+
+.g--padding-bottom-auto {
+    padding-bottom: auto;
+}
+
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getPaddingKeys() {
+
+            .g--padding-#{$key}\@#{$typeBreakPoint} {
+                padding: getPaddingValue($key+1);
+            }
+        
+            .g--padding-horizontal-#{$key}\@#{$typeBreakPoint} {
+                padding-left: getPaddingValue($key+1);
+                padding-right: getPaddingValue($key+1);
+            }
+        
+            .g--padding-vertical-#{$key}\@#{$typeBreakPoint} {
+                padding-top: getPaddingValue($key+1);
+                padding-bottom: getPaddingValue($key+1);
+            }
+        
+            .g--padding-top-#{$key}\@#{$typeBreakPoint} {
+                padding-top: getPaddingValue($key+1);
+            }
+        
+            .g--padding-bottom-#{$key}\@#{$typeBreakPoint} {
+                padding-bottom: getPaddingValue($key+1);
+            }
+        
+            .g--padding-left-#{$key}\@#{$typeBreakPoint} {
+                padding-left: getPaddingValue($key+1);
+            }
+        
+            .g--padding-right-#{$key}\@#{$typeBreakPoint} {
+                padding-right: getPaddingValue($key+1);
+            }
+        
+        }
+        
+        .g--padding-right-auto\@#{$typeBreakPoint} {
+            padding-right: auto;
+        }
+        
+        .g--padding-left-auto\@#{$typeBreakPoint} {
+            padding-left: auto;
+        }
+        
+        .g--padding-top-auto\@#{$typeBreakPoint} {
+            padding-top: auto;
+        }
+        
+        .g--padding-bottom-auto\@#{$typeBreakPoint} {
+            padding-bottom: auto;
+        }
+    }
+}

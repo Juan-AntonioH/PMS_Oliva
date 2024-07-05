@@ -1,0 +1,14 @@
+@each $key in getShadowKeys() {
+    .g--shadow-#{$key}{
+        @include box-shadow($key)
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getShadowKeys() {
+            .g--shadow-#{$key}\@#{$typeBreakPoint}{
+                @include box-shadow($key)
+            }
+        }
+    }
+}

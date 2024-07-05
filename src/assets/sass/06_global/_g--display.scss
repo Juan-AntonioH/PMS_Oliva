@@ -1,0 +1,14 @@
+@each $key in getDisplayKeys() {
+    .g--display-#{$key}{
+        display: getDisplayValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getDisplayKeys() {
+            .g--display-#{$key}\@#{$typeBreakPoint}{
+                display: getDisplayValue($key);
+            }
+        }
+    }
+}

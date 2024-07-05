@@ -1,0 +1,14 @@
+@each $key in getTextAlignKeys() {
+    .g--text-align-#{$key}{
+        text-align: getTextAlignValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getTextAlignKeys() {
+            .g--text-align-#{$key}\@#{$typeBreakPoint}{
+                text-align: getTextAlignValue($key);
+            }
+        }
+    }
+}

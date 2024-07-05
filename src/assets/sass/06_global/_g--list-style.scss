@@ -1,0 +1,14 @@
+@each $key in getListStyleKeys() {
+    .g--list-style-#{$key}{
+        list-style: getListStyleValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getListStyleKeys() {
+            .g--list-style-#{$key}\@#{$typeBreakPoint}{
+                list-style: getListStyleValue($key);
+            }
+        }
+    }
+}

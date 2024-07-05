@@ -1,0 +1,14 @@
+@each $key in getVisibilityKeys() {
+    .g--visibility-#{$key}{
+        visibility: getVisibilityValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getVisibilityKeys() {
+            .g--visibility-#{$key}\@#{$typeBreakPoint}{
+                visibility: getVisibilityValue($key);
+            }
+        }
+    }
+}

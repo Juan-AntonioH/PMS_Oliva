@@ -1,1 +1,144 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+
+  --primary: #5EA9C5;
+  --primary-medio-claro: #85BCD6;
+  --primary-claro: #CEE7F8;
+  --primary-medio-oscuro: #4267E92;
+  --primary-oscuro: #024850;
+  
+  --secondary: #91BAB1;
+  --secondary-medio-claro: #ABCFC9;
+  --secondary-claro: #DAF7F4;
+  --secondary-medio-oscuro: #48AD8E;
+  --secondary-oscuro: #048B57;
+
+  --tertiary: #FFBC75;
+  --tertiary-medio-claro: #FFD399;
+  --tertiary-claro: #FEF2DC;
+  --tertiary-medio-oscuro: #FE8C34;
+  --tertiary-oscuro: #D64E05;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.g--color-primary {
+  color: var(--primary);
+}
+
+.g--color-primary-medio-claro {
+  color: var(--primary-medio-claro);
+}
+
+.g--color-primary-claro {
+  color: var(--primary-claro);
+}
+
+.g--color-primary-medio-oscuro {
+  color: var(--primary-medio-oscuro);
+}
+
+.g--color-primary-oscuro {
+  color: var(--primary-oscuro);
+}
+
+.g--color-tertiary {
+  color: var(--tertiary);
+}
+
+.g--color-tertiary-medio-claro {
+  color: var(--tertiary-medio-claro);
+}
+
+.g--color-tertiary-claro {
+  color: var(--tertiary-claro);
+}
+
+.g--color-tertiary-medio-oscuro {
+  color: var(--tertiary-medio-oscuro);
+}
+
+.g--color-tertiary-oscuro {
+  color: var(--tertiary-oscuro);
+}
+
+.g--color-secondary {
+  color: var(--secondary);
+}
+
+.g--color-secondary-medio-claro {
+  color: var(--secondary-medio-claro);
+}
+
+.g--color-secondary-claro {
+  color: var(--secondary-claro);
+}
+
+.g--color-secondary-medio-oscuro {
+  color: var(--secondary-medio-oscuro);
+}
+
+.g--color-secondary-oscuro {
+  color: var(--secondary-oscuro);
+}
+
+.g--background-color-primary {
+  background-color: var(--primary);
+}
+
+.g--background-color-primary-medio-claro {
+  background-color: var(--primary-medio-claro);
+}
+
+.g--background-color-primary-claro {
+  background-color: var(--primary-claro);
+}
+
+.g--background-color-primary-medio-oscuro {
+  background-color: var(--primary-medio-oscuro);
+}
+
+.g--background-color-primary-oscuro {
+  background-color: var(--primary-oscuro);
+}
+
+.g--background-color-secondary {
+  background-color: var(--secondary);
+}
+
+.g--background-color-secondary-medio-claro {
+  background-color: var(--secondary-medio-claro);
+}
+
+.g--background-color-secondary-claro {
+  background-color: var(--secondary-claro);
+}
+
+.g--background-color-secondary-medio-oscuro {
+  background-color: var(--secondary-medio-oscuro);
+}
+
+.g--background-color-secondary-oscuro {
+  background-color: var(--secondary-oscuro);
+}
+
+.g--background-color-tertiary {
+  background-color: var(--tertiary);
+}
+
+.g--background-color-tertiary-medio-claro {
+  background-color: var(--tertiary-medio-claro);
+}
+
+.g--background-color-tertiary-claro {
+  background-color: var(--tertiary-claro);
+}
+
+.g--background-color-tertiary-medio-oscuro {
+  background-color: var(--tertiary-medio-oscuro);
+}
+
+.g--background-color-tertiary-oscuro {
+  background-color: var(--tertiary-oscuro);
+}

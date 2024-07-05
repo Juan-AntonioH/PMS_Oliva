@@ -1,0 +1,15 @@
+@each $key in getBorderRadiusKeys(){
+    .g--border-radius-#{$key}{
+        border-radius: getBorderRadiusValue($key+1);
+    }
+}
+
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getBorderRadiusKeys(){
+            .g--border-radius-#{$key}\@#{$typeBreakPoint}{
+                border-radius: getBorderRadiusValue($key+1);
+            }
+        }
+    }
+}

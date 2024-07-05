@@ -1,0 +1,18 @@
+.nav-caption,
+mat-icon {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+a.active {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid var(--primary);
+}
+
+mat-nav-list a.underline {
+  position: relative;
+}
+
+.mat-mdc-list-item:hover{
+  background-color: rgba(72, 173, 143, 0.3);
+}

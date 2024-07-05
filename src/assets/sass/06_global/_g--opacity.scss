@@ -1,0 +1,14 @@
+@each $key in getOpacityKeys() {
+    .g--opacity-#{$key}{
+        opacity: getOpacityValue($key+1);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getOpacityKeys() {
+            .g--opacity-#{$key}\@#{$typeBreakPoint}{
+                opacity: getOpacityValue($key+1);
+            }
+        }
+    }
+}

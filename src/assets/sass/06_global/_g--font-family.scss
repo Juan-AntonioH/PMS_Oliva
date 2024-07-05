@@ -1,0 +1,14 @@
+@each $key in getFontFamilyKeys() {
+    .g--font-family-#{$key}{
+        font-family: getFontFamilyValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getFontFamilyKeys() {
+            .g--font-family-#{$key}\@#{$typeBreakPoint}{
+                font-family: getFontFamilyValue($key);
+            }
+        }
+    }
+}

@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'pms_olvida';
+
+  links = [
+    { ruta: 'INICIO', url: '/' },
+    { ruta: 'NOSOTROS', url: '/nosotros' },
+    { ruta: 'PROYECTOS', url: '/proyectos' },
+    { ruta: 'SERVICIOS', url: '/servicios' },
+    { ruta: 'CLIENTES', url: '/clientes' },
+    { ruta: 'CONTACTO', url: '/contacto' },
+  ];
 }

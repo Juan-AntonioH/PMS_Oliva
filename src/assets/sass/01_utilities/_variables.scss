@@ -1,0 +1,307 @@
+$colors: (
+    "main":(#D8E9FD, #ABD1FC, #7CB8FE, #4DA0FE, #1F87FF, #0170EF, #025BC0, #04458F, #053061),
+    "alternative":(#FDEEE2, #FAD5B7, #F6BD8D, #F1A15F, #ED8835, #E17014, #B95B0E, #8A440A, #612E05),
+    "grey":(#F5F5F5, #DEDEDE, #C4C4C4, #ADADAD, #949494, #7D7D7D, #636363, #4D4D4D, #333333),
+    "white":(#FFFFFF, #FCFCFC, #FAFAFA, #F7F7F7, #F5F5F5, #F2F2F2, #F0F0F0, #EDEDED, #EBEBEB),
+    "red":(#f9d3d3, #f8adad, #f58888, #f66060, #fd3232, #fd0404, #d50101, #930303, #4b0101),
+    "green":(#d3f9df, #adf8d3, #88f5ae, #60f68a, #32fd61, #04fd46, #01d564, #039327, #014b1a),
+    "blue":(#D8E9FD, #ABD1FC, #7CB8FE, #4DA0FE, #1F87FF, #0170EF, #025BC0, #04458F, #053061),
+    "yellow":(#f9f8d3, #f8f7ad, #f5f188, #f6f160, #fdf332, #f1fd04, #c0d501, #938e03, #4b4701),
+);
+
+$font-sizes: (
+    "2xs":12px,
+    "xs":14px,
+    "default":16px,
+    "s":18px,
+    "m":20px,
+    "l":24px,
+    "xl":30px,
+    "2xl":36px,
+    "3xl":48px,
+    "4xl":64px,
+    "5xl":80px,
+    "6xl":96px,
+    "7xl":128px
+);
+
+$font-families: (
+    "sans":unquote("system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\" "),
+    "default":unquote("system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\" "),
+    "serif":unquote("Georgia, Cambria, \"Times New Roman\", Times, serif"),
+    "mono":unquote("\"Roboto Mono\",Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace"),
+    "main":"",
+    "alternative":""
+);
+
+$font-weights: (
+    "thin":100,
+    "extra-light":200,
+    "light":300,
+    "normal":400,
+    "medium":500,
+    "semi-bold":600,
+    "bold":700,
+    "extra-bold":800,
+    "black":900
+);
+
+$font-styles: (
+    "normal":normal,
+    "italic":italic,
+    "oblique":oblique,
+    "inherit":inherit
+);
+
+
+$text-aligns: (
+    "start":start,
+    "end":end,
+    "left":left,
+    "right":right,
+    "center":center,
+    "justify":justify
+);
+
+$text-decorations: (
+    "none":none,
+    "underline":underline,
+    "overline":overline,
+    "line-through":line-through,
+    "blink":blink
+);
+
+$text-transforms: (
+    "none":none,
+    "capitalize":capitalize,
+    "uppercase":uppercase,
+    "lowercase":lowercase
+);
+
+$list-styles: (
+    "none":none,
+    "circle":circle,
+    "disc":disc,
+    "square":square,
+    "decimal": decimal,
+    "decimal-leading-zero":decimal-leading-zero,
+    "lower-roman":lower-roman,
+    "upper-roman":upper-roman,
+    "lower-alpha":lower-alpha,
+    "upper-alpha":upper-alpha,
+    "lower-greek":lower-greek,
+    "lower-latin":lower-latin,
+    "upper-latin":upper-latin,
+    "hebrew":hebrew,
+    "armenian": armenian,
+    "georgian": georgian,
+    "cjk-ideographic":cjk-ideographic,
+    "hiragana": hiragana,
+    "katakana": katakana,
+    "hiragana-iroha":hiragana-iroha,
+    "katakana-iroha":katakana-iroha
+);
+
+$border-width: (
+    0px,
+    1px,
+    2px,
+    4px,
+    6px,
+    8px,
+    12px,
+    16px,
+    24px
+);
+
+$border-radius: (
+    0px,
+    2px,
+    4px,
+    6px,
+    8px,
+    12px,
+    16px,
+    24px
+);
+
+$border-styles: (
+    "none": none,
+    "hidden":hidden,
+    "dotted":dotted,
+    "dashed":dashed,
+    "solid": solid,
+    "double":double,
+    "groove":groove,
+    "ridge": ridge,
+    "inset": inset,
+    "outset":outset
+);
+
+$opacities: (
+    0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1
+);
+
+$shadows: (
+    "0":unquote("none"),
+    "1":unquote("0 0 0 1px rgba(0, 0, 0, 0.05)"),
+    "2":unquote("0 1px 2px 0 rgba(0, 0, 0, 0.05)"),
+    "3":unquote("0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)"),
+    "4":unquote("0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"),
+    "5":unquote("0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)"),
+    "6":unquote("0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"),
+    "7":unquote("0 25px 50px -12px rgba(0, 0, 0, 0.25)"),
+    "inset":unquote("inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692)")
+);
+
+$margins: (
+    0px,
+    4px,
+    6px,
+    8px,
+    10px,
+    12px,
+    16px,
+    20px,
+    24px,
+    32px,
+    40px,
+    48px,
+    64px,
+    80px,
+    96px,
+    128px
+);
+
+$paddings: (
+    0px,
+    4px,
+    6px,
+    8px,
+    10px,
+    12px,
+    16px,
+    20px,
+    24px,
+    32px,
+    40px,
+    48px,
+    64px,
+    80px,
+    96px,
+    128px
+);
+
+$widths: (
+    "0":0px,
+    "1":50px,
+    "2":100px,
+    "3":150px,
+    "4":200px,
+    "5":250px,
+    "6":300px,
+    "7":350px,
+    "8":400px,
+    "9":450px,
+    "10":500px,
+    "11":550px,
+    "12":600px,
+    "full": 100vw
+);
+
+$heights: (
+    "0":0px,
+    "1":50px,
+    "2":100px,
+    "3":150px,
+    "4":200px,
+    "5":250px,
+    "6":300px,
+    "7":350px,
+    "8":400px,
+    "9":450px,
+    "10":500px,
+    "11":550px,
+    "12":600px,
+    "full": 100vw
+);
+
+$overflows: (
+    "visible": visible,
+    "hidden": hidden,
+    "scroll": scroll,
+    "auto": auto
+);
+
+$visibilities: (
+    "visible":visible,
+    "hidden":hidden,
+    "collapse":collapse
+);
+
+$positions: (
+    "static":static,
+    "relative":relative,
+    "absolute":absolute,
+    "fixed":fixed,
+    "sticky":sticky
+);
+
+$displays: (
+    "none":none,
+    "inline":inline,
+    "block":block,
+    "inline-block":inline-block,
+    "list-item":list-item,
+    "run-in":run-in,
+    "compact":compact,
+    "table":table,
+    "inline-table":inline-table,
+    "table-row-group":table-row-group,
+    "table-header-group":table-header-group,
+    "table-footer-group":table-footer-group,
+    "table-row":table-row,
+    "table-column-group":table-column-group,
+    "table-column":table-column,
+    "table-cell":table-cell,
+    "table-caption":table-caption,
+    "ruby":ruby,
+    "ruby-base":ruby-base,
+    "ruby-text":ruby-text
+);
+
+$gaps: (
+    0px,
+    4px,
+    6px,
+    8px,
+    10px,
+    12px,
+    16px,
+    20px,
+    24px,
+    32px,
+    40px,
+    48px,
+    64px,
+    80px,
+    96px,
+    128px
+);
+
+$break-points: (
+    "":0px,
+    "movil":499px,
+    "tablet":749px,
+    "desktop":999px
+);

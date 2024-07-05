@@ -1,0 +1,14 @@
+@each $key in getTextTransformKeys() {
+    .g--text-transform-#{$key}{
+        text-transform: getTextTransformValue($key);
+    }
+}
+@each $typeBreakPoint in getBreakPointKeys() {
+    @media(min-width:getBreakPointValue($typeBreakPoint)) {
+        @each $key in getTextTransformKeys() {
+            .g--text-transform-#{$key}\@#{$typeBreakPoint}{
+                text-transform: getTextTransformValue($key);
+            }
+        }
+    }
+}
