@@ -7,6 +7,9 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { AvisoLegalComponent } from './pages/politicas/aviso-legal/aviso-legal.component';
+import { CookiesComponent } from './pages/politicas/cookies/cookies.component';
+import { PrivacidadComponent } from './pages/politicas/privacidad/privacidad.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,6 +19,9 @@ const routes: Routes = [
   { path: 'clientes', component: ClientesComponent },
   { path: 'servicios', component: ServiciosComponent },
   { path: 'error404', component: Error404Component },
+  { path: 'aviso-legal', component: AvisoLegalComponent},
+  { path: 'politica-de-cookies', component:CookiesComponent},
+  { path: 'politica-de-privacidad', component:PrivacidadComponent},
   { path: '**', redirectTo: 'error404' }
 ];
 

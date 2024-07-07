@@ -24,6 +24,10 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { Error404Component } from './pages/error404/error404.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { AvisoLegalComponent } from './pages/politicas/aviso-legal/aviso-legal.component';
+import { CookiesComponent } from './pages/politicas/cookies/cookies.component';
+import { PrivacidadComponent } from './pages/politicas/privacidad/privacidad.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { Error404Component } from './pages/error404/error404.component';
     ProyectosComponent,
     ServiciosComponent,
     ClientesComponent,
-    Error404Component
+    Error404Component,
+    FooterComponent,
+    AvisoLegalComponent,
+    CookiesComponent,
+    PrivacidadComponent
   ],
   imports: [
     MatSlideToggleModule,

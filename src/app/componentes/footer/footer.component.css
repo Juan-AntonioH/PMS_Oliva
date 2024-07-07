@@ -1,0 +1,36 @@
+.footer-titulos {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.list-text-company>li {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.list-text-company>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-servicios-link>li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  padding-bottom: 10px;
+  padding-top: 6px;
+  border-top: solid 1px;
+  border-color: #DDDDDD66;
+  border-width: 85% !important;
+}
+
+.footer-servicios-link>li>a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-servicios-link>li:first-child {
+  border-top: none;
+}

@@ -3,7 +3,7 @@
   --primary: #5EA9C5;
   --primary-medio-claro: #85BCD6;
   --primary-claro: #CEE7F8;
-  --primary-medio-oscuro: #4267E92;
+  --primary-medio-oscuro: #4267E9;
   --primary-oscuro: #024850;
   
   --secondary: #91BAB1;
@@ -21,6 +21,7 @@
 
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
 }
 
 .g--color-primary {
