@@ -28,6 +28,7 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { AvisoLegalComponent } from './pages/politicas/aviso-legal/aviso-legal.component';
 import { CookiesComponent } from './pages/politicas/cookies/cookies.component';
 import { PrivacidadComponent } from './pages/politicas/privacidad/privacidad.component';
+import { CarouselComponent } from './componentes/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { PrivacidadComponent } from './pages/politicas/privacidad/privacidad.com
     FooterComponent,
     AvisoLegalComponent,
     CookiesComponent,
-    PrivacidadComponent
+    PrivacidadComponent,
+    CarouselComponent
   ],
   imports: [
     MatSlideToggleModule,
