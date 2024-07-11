@@ -19,6 +19,10 @@
   --tertiary-oscuro: #D64E05;
 }
 
+.slick-prev::before, .slick-next::before {
+  color: var(--secondary-oscuro)
+}
+
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   line-height: 1.5;

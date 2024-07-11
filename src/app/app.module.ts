@@ -29,6 +29,9 @@ import { AvisoLegalComponent } from './pages/politicas/aviso-legal/aviso-legal.c
 import { CookiesComponent } from './pages/politicas/cookies/cookies.component';
 import { PrivacidadComponent } from './pages/politicas/privacidad/privacidad.component';
 import { CarouselComponent } from './componentes/carousel/carousel.component';
+import { CardComponent } from './componentes/card/card.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SliderClientesComponent } from './componentes/slider-clientes/slider-clientes.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,9 @@ import { CarouselComponent } from './componentes/carousel/carousel.component';
     AvisoLegalComponent,
     CookiesComponent,
     PrivacidadComponent,
-    CarouselComponent
+    CarouselComponent,
+    SliderClientesComponent,
+    // CardComponent
   ],
   imports: [
     MatSlideToggleModule,
@@ -60,8 +65,10 @@ import { CarouselComponent } from './componentes/carousel/carousel.component';
     MatButtonModule,
     MatSidenavModule,
     MatSidenav,
-    MatListModule
-  ],
+    MatListModule,
+    CardComponent,
+    FontAwesomeModule
+],
   providers: [
     provideClientHydration(),
     provideAnimationsAsync(),

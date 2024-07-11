@@ -2,6 +2,29 @@
     <h1 class="text-center g--color-primary fw-bold pt-3">Fabricación y montaje de stands</h1>
     <app-carousel />
 </section>
+<section class="container py-5">
+    <h2 class="text-center g--color-primary c-lineas_laterales fw-semibold my-4">QUIÉNES SOMOS</h2>
+    <p class="mx-lg-5 px-lg-5" style="font-size: 14px">
+        Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus
+        raices en una pieza clásica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este
+        adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de
+        Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un
+        pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem
+        Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El
+        Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular
+        durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en
+        la sección 1.10.32
+    </p>
+</section>
+<section class="container my-5 d-flex flex-wrap">
+    <article *ngFor="let card of cards" class="col-12 col-md-6 col-lg-4 mb-3 px-3">
+        <app-card [card]="card" />
+    </article>
+</section>
+<section class="container my-5">
+    <h2 class="text-center g--color-primary c-lineas_laterales fw-semibold py-4">CLIENTES</h2>
+    <app-slider-clientes [slider]="slider"></app-slider-clientes>
+</section>
 <section>
     <iframe class="w-100"
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d242.3780612564896!2d-0.4089290113777436!3d39.514276850079064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045a6672856dd%3A0xc5b1d413126334a0!2sC.%20Severo%20Ochoa%2C%2018%2C%2046100%20Burjasot%2C%20Valencia!5e0!3m2!1ses!2ses!4v1720538432676!5m2!1ses!2ses"

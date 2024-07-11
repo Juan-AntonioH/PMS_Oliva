@@ -1,0 +1,42 @@
+.c-lineas_laterales {
+    position: relative;
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 2rem;
+}
+
+.c-lineas_laterales::before,
+.c-lineas_laterales::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 25vw;
+    height: 1px;
+    background-color: var(--secondary-medio-claro);
+}
+
+.c-lineas_laterales::before {
+    left: 0;
+}
+
+.c-lineas_laterales::after {
+    right: 0;
+}
+@media (max-width: 990px) {
+    .c-lineas_laterales{
+        font-size: 1.5rem;
+    }
+    .c-lineas_laterales::before,
+    .c-lineas_laterales::after {
+        width: 20vw;
+    }
+}
+@media (max-width: 475px) {
+    .c-lineas_laterales{
+        font-size: 1.3rem;
+    }
+    .c-lineas_laterales::before,
+    .c-lineas_laterales::after {
+        width: 15vw;
+    }
+}

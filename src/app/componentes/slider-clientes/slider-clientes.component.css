@@ -1,0 +1,7 @@
+.decoloracion {
+    filter: grayscale(100%);
+}
+
+.decoloracion:hover {
+    filter: grayscale(0%);
+}

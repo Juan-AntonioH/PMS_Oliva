@@ -1,0 +1,20 @@
+[
+    {
+        "icon": "bi bi-journals",
+        "title": "Proyectos",
+        "texto": "Un profundo conocimiento de los procesos de fabricación, la experiencia en la distribución racional de espacios y el objetivo de destacar entre el resto de expositores nos guían a la hora de realizar nuestro trabajo.",
+        "ruta":"/proyectos"
+    },
+    {
+        "icon": "bi bi-tools",
+        "title": "Fabricamos",
+        "texto": "La calidad de la construcción y un precio final inmejorable tienen un secreto: Fabricamos nuestros stands en nuestras instalaciones. Fabricamos stands por nosotros mismos y fabricamos para terceros.",
+        "ruta":"/servicios"
+    },
+    {
+        "icon": "bi bi-bricks",
+        "title": "Montamos",
+        "texto": "En España e internacionalmente. Grandes stands y pequeños espacios. Stands de diseño o stands modulares. Stands individuales o compartidos.",
+        "ruta":"/servicios"
+    }
+]

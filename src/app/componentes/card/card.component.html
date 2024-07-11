@@ -1,0 +1,14 @@
+<mat-card style="min-height: 40vh;">
+    <div class="pt-5">
+        <div class="c-card-icon">
+            <i class="{{card.icon}} custom-icon"></i>
+        </div>
+        <mat-card-title class=""><h4 class="text-center g--color-secondary">{{card.title}}</h4></mat-card-title>
+    </div>
+    <mat-card-content class="d-flex flex-column justify-content-between">
+        <p class="card-text px-3">{{card.texto}}</p>
+    </mat-card-content>
+    <mat-card-actions class="mt-auto">
+        <button mat-button class="py-3" routerLink="{{ card.ruta }}">Saber más ...</button>
+    </mat-card-actions>
+</mat-card>

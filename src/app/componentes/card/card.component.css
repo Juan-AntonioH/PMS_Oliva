@@ -1,0 +1,22 @@
+.c-card-icon {
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.custom-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+}
+
+.card-text {
+  max-height: 250px;
+  overflow: auto;
+}
+
+mat-card{
+  height: 100%;
+}

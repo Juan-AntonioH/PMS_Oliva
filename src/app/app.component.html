@@ -3,7 +3,7 @@
   <mat-sidenav #sidenav role="navigation" position="end" [fixedInViewport]="true">
     <app-side-nav [links]="links" (CloseSidenav)="sidenav.close()" />
   </mat-sidenav>
-  <main>
+  <main class="mx-5">
     <router-outlet />
   </main>
   <app-footer />

@@ -24,6 +24,7 @@
   border-top: solid 1px;
   border-color: #DDDDDD66;
   border-width: 85% !important;
+  text-decoration: none !important;
 }
 
 .footer-servicios-link>li>a {
@@ -33,4 +34,14 @@
 
 .footer-servicios-link>li:first-child {
   border-top: none;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li::marker {
+  display: none;
 }
