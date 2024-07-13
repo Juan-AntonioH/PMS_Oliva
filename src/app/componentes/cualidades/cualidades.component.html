@@ -1,0 +1,5 @@
+<div class="row mx-0 my-5 col-12">
+    <div *ngFor="let cualidad of cualidades; let i = index" class="col-lg-3 col-md-4 col-sm-12 my-2">
+        <app-cualidad [cualidad]="cualidad" @cualidad *ngIf="showAnimation && currentIndex >= i"></app-cualidad>
+    </div>
+</div>

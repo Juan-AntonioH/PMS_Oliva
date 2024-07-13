@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './nosotros.component.css'
 })
 export class NosotrosComponent {
-
+  tituloInicial = {
+    "tipo": "Nosotros",
+    "titulo": "Quiénes somos"
+  }
 }

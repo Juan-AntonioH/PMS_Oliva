@@ -1,0 +1,20 @@
+.nosotros-titulo {
+    color: #000000;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.mensaje-principal {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+    padding-bottom: 20px;
+}
+
+.mensaje-secundario {
+    color: #2B2A2A;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8em;
+}

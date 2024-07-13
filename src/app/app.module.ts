@@ -32,6 +32,10 @@ import { CarouselComponent } from './componentes/carousel/carousel.component';
 import { CardComponent } from './componentes/card/card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SliderClientesComponent } from './componentes/slider-clientes/slider-clientes.component';
+import { TituloPagesComponent } from './componentes/titulo-pages/titulo-pages.component';
+import { OfrecemosComponent } from './componentes/ofrecemos/ofrecemos.component';
+import { CualidadesComponent } from './componentes/cualidades/cualidades.component';
+import { CualidadComponent } from './componentes/cualidades/cualidad/cualidad.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +55,10 @@ import { SliderClientesComponent } from './componentes/slider-clientes/slider-cl
     PrivacidadComponent,
     CarouselComponent,
     SliderClientesComponent,
+    TituloPagesComponent,
+    OfrecemosComponent,
+    CualidadesComponent,
+    CualidadComponent,
     // CardComponent
   ],
   imports: [
