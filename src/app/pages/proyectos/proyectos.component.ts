@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './proyectos.component.css'
 })
 export class ProyectosComponent {
-
+  tituloInicial = {
+    "tipo": "Proyectos",
+    "titulo": "Nuestros Trabajos"
+  }
 }

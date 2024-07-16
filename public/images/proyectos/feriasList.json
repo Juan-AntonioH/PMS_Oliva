@@ -1,0 +1,286 @@
+[
+    {
+        "ruta": "alicante",
+        "imagenes": [
+            {
+                "src": "agroalimentario1.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "agroalimentario2.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "agroalimentario3.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "caixapopular.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "decathlon.webp",
+                "title": "imagen5"
+            }
+        ]
+    },
+    {
+        "ruta": "berlin",
+        "imagenes": [
+            {
+                "src": "edificacion1.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "edificacion2.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "edificacion3.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "edificacion4.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "edificacion5.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "edificacion6.webp",
+                "title": "imagen6"
+            },
+            {
+                "src": "edificacion7.webp",
+                "title": "imagen7"
+            }
+        ]
+    },
+    {
+        "ruta": "londres",
+        "imagenes": [
+            {
+                "src": "edificacion8.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "edificacion9.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "edificacion10.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "edificacion11.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "edificacion12.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "edificacion13.webp",
+                "title": "imagen6"
+            },
+            {
+                "src": "edificacion14.webp",
+                "title": "imagen7"
+            },
+            {
+                "src": "edificacion15.webp",
+                "title": "imagen8"
+            }
+        ]
+    },
+    {
+        "ruta": "madrid",
+        "imagenes": [
+            {
+                "src": "edificacion16.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "edificacion17.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "edificacion18.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "edificacion19.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "edificacion20.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "edificacion21.webp",
+                "title": "imagen6"
+            },
+            {
+                "src": "edificacion22.webp",
+                "title": "imagen7"
+            },
+            {
+                "src": "edificacion23.webp",
+                "title": "imagen8"
+            },
+            {
+                "src": "edificacion24.webp",
+                "title": "imagen9"
+            }
+        ]
+    },
+    {
+        "ruta": "malaga",
+        "imagenes": [
+            {
+                "src": "hidraulica1.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "hidraulica2.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "hidraulica3.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "lacteos.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "MG_7740.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "MG_7773.webp",
+                "title": "imagen6"
+            }
+        ]
+    },
+    {
+        "ruta": "paris",
+        "imagenes": [
+            {
+                "src": "edificacion7.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "edificacion14.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "MG_8608.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "MIARCO1.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "nave_metal.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "oficina.webp",
+                "title": "imagen6"
+            },
+            {
+                "src": "PENASOL_FINAL_ok.webp",
+                "title": "imagen7"
+            }
+        ]
+    },
+    {
+        "ruta": "roma",
+        "imagenes": [
+            {
+                "src": "agroalimentario1.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "edificacion6.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "edificacion9.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "edificacion10.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "edificacion11.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "edificacion19.webp",
+                "title": "imagen6"
+            },
+            {
+                "src": "edificacion20.webp",
+                "title": "imagen7"
+            },
+            {
+                "src": "edificacion23.webp",
+                "title": "imagen8"
+            }
+        ]
+    },
+    {
+        "ruta": "valencia",
+        "imagenes": [
+            {
+                "src": "agroalimentario2.webp",
+                "title": "imagen1"
+            },
+            {
+                "src": "caixapopular.webp",
+                "title": "imagen2"
+            },
+            {
+                "src": "edificacion2.webp",
+                "title": "imagen3"
+            },
+            {
+                "src": "edificacion6.webp",
+                "title": "imagen4"
+            },
+            {
+                "src": "edificacion16.webp",
+                "title": "imagen5"
+            },
+            {
+                "src": "edificacion20.webp",
+                "title": "imagen6"
+            },
+            {
+                "src": "edificacion21.webp",
+                "title": "imagen7"
+            },
+            {
+                "src": "MG_7773.webp",
+                "title": "imagen8"
+            },
+            {
+                "src": "MG_8608.webp",
+                "title": "imagen9"
+            },
+            {
+                "src": "MIARCO1.webp",
+                "title": "imagen10"
+            },
+            {
+                "src": "nave_metal.webp",
+                "title": "imagen11"
+            }
+        ]
+    }
+]

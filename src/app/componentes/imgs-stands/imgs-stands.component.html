@@ -1,0 +1,12 @@
+<div id="ferias" class="container-fluid p-lg-5 px-sm-2"
+    style="background-image: url(images/proyectos/BG_Servicios.webp);  background-size: cover;">
+    <h2 class="c-feria__titulo">Feria de <span class="text-capitalize">{{feria.ruta}}</span></h2>
+    <div class="row m-0">
+        <div *ngFor="let imagen of feria.imagenes; let i = index"
+            class="col-lg-4 col-md-6 col-sm-12 col-xs-12 p-3 c-feria__imagen">
+            <img @ferias *ngIf="showAnimation && currentIndex >= i" class="img-fluid"
+                style="height: 100%; width: 100%; max-height: 300px;" src="images/proyectos/{{feria.ruta}}/{{imagen.src}}"
+                alt="{{imagen.title}}">
+        </div>
+    </div>
+</div>

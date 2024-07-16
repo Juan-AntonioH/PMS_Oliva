@@ -1,0 +1,16 @@
+.c-feria__titulo {
+    text-align: center;
+    margin: 20px 0;
+    color: #FFFFFF;
+    font-family: "DM Sans", Sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.c-feria__imagen {
+    transition: all 0.8s;
+}
+
+.c-feria__imagen:hover {
+    filter: brightness(50%);
+}

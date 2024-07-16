@@ -36,6 +36,8 @@ import { TituloPagesComponent } from './componentes/titulo-pages/titulo-pages.co
 import { OfrecemosComponent } from './componentes/ofrecemos/ofrecemos.component';
 import { CualidadesComponent } from './componentes/cualidades/cualidades.component';
 import { CualidadComponent } from './componentes/cualidades/cualidad/cualidad.component';
+import { TabsComponent } from "./componentes/tabs/tabs.component";
+import { ImgsStandsComponent } from './componentes/imgs-stands/imgs-stands.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +60,7 @@ import { CualidadComponent } from './componentes/cualidades/cualidad/cualidad.co
     TituloPagesComponent,
     OfrecemosComponent,
     CualidadesComponent,
-    CualidadComponent,
+    CualidadComponent
     // CardComponent
   ],
   imports: [
@@ -75,7 +77,8 @@ import { CualidadComponent } from './componentes/cualidades/cualidad/cualidad.co
     MatSidenav,
     MatListModule,
     CardComponent,
-    FontAwesomeModule
+    FontAwesomeModule,
+    TabsComponent
 ],
   providers: [
     provideClientHydration(),

@@ -1,0 +1,7 @@
+<mat-tab-group dynamicHeight>
+    @for (feria of ferias; track feria) {
+    <mat-tab [label]="feria.ruta.toUpperCase()">
+        <div class="pt-2"><app-imgs-stands [feria]="feria" /></div>
+    </mat-tab>
+    }
+</mat-tab-group>
