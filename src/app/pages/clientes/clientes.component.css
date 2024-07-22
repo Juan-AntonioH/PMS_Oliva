@@ -1,0 +1,25 @@
+.cliente-img {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.cliente-img:hover {
+    opacity: 1;
+}
+
+.cliente-texto {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    word-spacing: 5px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.border-img {
+    border-bottom: 1px dashed var(--primary-claro);
+    border-right: 1px dashed var(--primary-claro);
+}
