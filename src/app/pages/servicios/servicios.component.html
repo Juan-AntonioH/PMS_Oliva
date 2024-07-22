@@ -1,1 +1,27 @@
-<p>servicios works!</p>
+<section><app-titulo-pages [tituloInicial]="tituloInicial" /></section>
+<section class="my-5 container d-flex flex-wrap">
+    <article *ngFor="let servicio of servicios" class="col-12 col-md-6 col-lg-4 mb-3 px-3">
+        <div class="c-servicio__bloque" (mouseover)="onMouseOver(servicio)" (mouseleave)="onMouseLeave(servicio)"
+            [ngStyle]="{'border-color':servicio.color}">
+            <div class="c-servicio__icono">
+                <div [ngClass]="{'hovered': servicio.hover}" class="c-servicio__icono-contenedor"
+                    [ngClass]="servicio.titulo"
+                    [ngStyle]="{'border-color': servicio.color, 'background-color': servicio.hover ? servicio.color : 'white'}"
+                    [ngStyle]="{'border-color':servicio.color}"><i class="bi bi-check-lg"
+                        [ngStyle]="servicio.hover ? {'color': 'white'} : {'color': servicio.color}"></i></div>
+            </div>
+            <div class="c-servicio__titulo py-2" [ngStyle]="{'color':servicio.color}">
+                <p class="mb-2">{{servicio.titulo}}</p>
+            </div>
+            <div (click)="scrollTo(servicio.titulo)" class="c-servicio__ruta" [ngStyle]="{'color':servicio.color}">Saber
+                más <i class="bi bi-chevron-double-right"></i></div>
+        </div>
+    </article>
+</section>
+
+<section>
+    <article *ngFor="let servicio of servicios">
+        <p id="{{servicio.titulo}}" class="separador"></p>
+        <app-servicio [servicio]="servicio.servicio" />
+    </article>
+</section>

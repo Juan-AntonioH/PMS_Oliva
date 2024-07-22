@@ -1,0 +1,32 @@
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+    font-size: 50px;
+    color: var(--primary);
+}
+
+.icon.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.titulo__servicio {
+    font-size: 40px;
+    font-weight: 900;
+    opacity: 1;
+    color: var(--secondary);
+}

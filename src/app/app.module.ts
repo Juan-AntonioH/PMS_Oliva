@@ -38,6 +38,7 @@ import { CualidadesComponent } from './componentes/cualidades/cualidades.compone
 import { CualidadComponent } from './componentes/cualidades/cualidad/cualidad.component';
 import { TabsComponent } from "./componentes/tabs/tabs.component";
 import { ImgsStandsComponent } from './componentes/imgs-stands/imgs-stands.component';
+import { ServicioComponent } from './componentes/servicio/servicio.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ImgsStandsComponent } from './componentes/imgs-stands/imgs-stands.compo
     TituloPagesComponent,
     OfrecemosComponent,
     CualidadesComponent,
-    CualidadComponent
+    CualidadComponent,
+    ServicioComponent
     // CardComponent
   ],
   imports: [
