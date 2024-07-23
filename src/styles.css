@@ -159,3 +159,29 @@ body {
 .g--background-color-tertiary-oscuro {
   background-color: var(--tertiary-oscuro);
 }
+
+.input-invalid {
+  border: solid 3px red;
+}
+
+.input-valid {
+  border: solid 3px green;
+}
+
+.status200 {
+  border: solid 1px white;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.status400 {
+  border: solid 1px #16558F;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 10px;
+}

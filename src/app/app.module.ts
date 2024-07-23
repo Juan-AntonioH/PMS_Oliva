@@ -37,7 +37,7 @@ import { OfrecemosComponent } from './componentes/ofrecemos/ofrecemos.component'
 import { CualidadesComponent } from './componentes/cualidades/cualidades.component';
 import { CualidadComponent } from './componentes/cualidades/cualidad/cualidad.component';
 import { TabsComponent } from "./componentes/tabs/tabs.component";
-import { ImgsStandsComponent } from './componentes/imgs-stands/imgs-stands.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { ServicioComponent } from './componentes/servicio/servicio.component';
 
 @NgModule({
@@ -80,13 +80,14 @@ import { ServicioComponent } from './componentes/servicio/servicio.component';
     MatListModule,
     CardComponent,
     FontAwesomeModule,
-    TabsComponent
-],
+    TabsComponent,
+    ReactiveFormsModule
+  ],
   providers: [
     provideClientHydration(),
     provideAnimationsAsync(),
     provideHttpClient(withFetch())
-    
+
   ],
   bootstrap: [AppComponent]
 })
