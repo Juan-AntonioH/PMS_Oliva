@@ -54,7 +54,14 @@
               "node_modules/slick-carousel/slick/slick.min.js"
             ],
             "baseHref": "./",
-            "server": "src/main.server.ts"
+            "stylePreprocessorOptions": {
+              "sass": {
+                "silenceDeprecations": [
+                  "global-builtin",
+                  "import"
+                ]
+              }
+            }
           },
           "configurations": {
             "production": {

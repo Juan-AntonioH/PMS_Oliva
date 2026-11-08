@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2, ElementRef, AfterViewInit, Input } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'app-servicio',
   templateUrl: './servicio.component.html',
   styleUrls: ['./servicio.component.css']  // Corrigido: 'styleUrls' en lugar de 'styleUrl'

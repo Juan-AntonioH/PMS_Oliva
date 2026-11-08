@@ -2,6 +2,7 @@ import { Component, Renderer2 } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
+  standalone: false,
   selector: 'app-contacto',
   templateUrl: './contacto.component.html',
   styleUrl: './contacto.component.css'

@@ -4,6 +4,7 @@ import { animate, transition, style, trigger } from '@angular/animations';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
+  standalone: false,
   selector: 'app-cualidades',
   templateUrl: './cualidades.component.html',
   styleUrls: ['./cualidades.component.css'],

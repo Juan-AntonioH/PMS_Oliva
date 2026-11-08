@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import imageList from '../../../../public/images/carousel/carousel_images.json';
 
 @Component({
+  standalone: false,
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.css'

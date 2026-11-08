@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Cualidad } from '../../../modelos/cualidad';
 @Component({
+  standalone: false,
   selector: 'app-cualidad',
   templateUrl: './cualidad.component.html',
   styleUrl: './cualidad.component.css'

@@ -4,6 +4,7 @@ import iconList from '../../../../public/icons/card_icons.json';
 import sliderClientes from '../../../../public/images/clientes/sliderClientes.json';
 
 @Component({
+  standalone: false,
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import sliderClientes from '../../../../public/images/clientes/sliderClientes.json';
 @Component({
+  standalone: false,
   selector: 'app-clientes',
   templateUrl: './clientes.component.html',
   styleUrl: './clientes.component.css'
