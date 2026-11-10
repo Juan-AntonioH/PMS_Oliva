@@ -4,7 +4,7 @@ import { Component, OnInit, Renderer2, ElementRef, AfterViewInit, Input } from '
   standalone: false,
   selector: 'app-servicio',
   templateUrl: './servicio.component.html',
-  styleUrls: ['./servicio.component.css']  // Corrigido: 'styleUrls' en lugar de 'styleUrl'
+  styleUrls: ['./servicio.component.css']
 })
 export class ServicioComponent implements OnInit, AfterViewInit {
   @Input() servicio!: any;

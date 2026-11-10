@@ -42,8 +42,8 @@ importers:
         specifier: ^20.3.35
         version: 20.3.35(@angular/common@20.3.35(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))(@angular/platform-browser@20.3.35(@angular/animations@20.3.35(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1)))(@angular/common@20.3.35(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))(rxjs@7.8.2))(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1)))(rxjs@7.8.2)
       '@fortawesome/angular-fontawesome':
-        specifier: ^0.15.0
-        version: 0.15.0(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))
+        specifier: ^2.0.0
+        version: 2.0.0(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))
       '@fortawesome/free-brands-svg-icons':
         specifier: ^6.5.2
         version: 6.7.2
@@ -1260,10 +1260,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@fortawesome/angular-fontawesome@0.15.0':
-    resolution: {integrity: sha512-oxmJDYGNSym5ycFR0LX4ZOPAU+wWmMAznYpkm5DNAtWWkhMLcrZl15eZQmVIEE+qruQ7JiVrg3tpo8bEkFlDgw==}
+  '@fortawesome/angular-fontawesome@2.0.0':
+    resolution: {integrity: sha512-xsPfjcs7elZYWo1Q19IrqMd5GdUAyPGnwElq7x/x9PKIwYXsnCaEtJkMUkZUj3Yesdkmqs0X0IMOwZvz7BNAtw==}
     peerDependencies:
-      '@angular/core': ^18.0.0
+      '@angular/core': ^20.0.0
 
   '@fortawesome/fontawesome-common-types@6.7.2':
     resolution: {integrity: sha512-Zs+YeHUC5fkt7Mg1l6XTniei3k4bwG/yo3iFUtZWd/pMx9g3fdvkSK9E0FOC+++phXOka78uJcYb8JaFkW52Xg==}
@@ -6259,7 +6259,7 @@ snapshots:
   '@esbuild/win32-x64@0.28.1':
     optional: true
 
-  '@fortawesome/angular-fontawesome@0.15.0(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))':
+  '@fortawesome/angular-fontawesome@2.0.0(@angular/core@20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1))':
     dependencies:
       '@angular/core': 20.3.35(@angular/compiler@20.3.35)(rxjs@7.8.2)(zone.js@0.15.1)
       '@fortawesome/fontawesome-svg-core': 6.7.2

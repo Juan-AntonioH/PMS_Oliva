@@ -6,8 +6,7 @@
     </div>
     <div class="carousel-inner carousal-container">
         <div *ngFor="let slide of slides; let i = index" [ngClass]="{'active': i === 0}" class="carousel-item">
-            <img src="images/carousel/{{ slide.src }}" alt="{{ slide.title }}" class="d-block w-100 img-fluid"
-                loading="lazy" />
+            <img src="images/carousel/{{ slide.src }}" alt="{{ slide.title }}" class="d-block w-100 img-fluid" />
         </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">

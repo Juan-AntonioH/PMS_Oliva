@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -84,7 +84,6 @@ import { ServicioComponent } from './componentes/servicio/servicio.component';
     ReactiveFormsModule
   ],
   providers: [
-    provideClientHydration(),
     provideAnimationsAsync(),
     provideHttpClient(withFetch())
 
