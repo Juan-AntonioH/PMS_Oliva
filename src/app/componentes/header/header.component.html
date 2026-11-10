@@ -3,7 +3,7 @@
     <a routerLink="/">
       <img class="img-fluid mt-1" src="logo/logo_pms.webp" alt="Logotipo" />
     </a>
-    <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" [tabPanel]="tabPanel">
+    <nav mat-tab-nav-bar class="ms-auto d-none d-sm-none d-lg-block" animationDuration="800ms" [tabPanel]="tabPanel">
       <a mat-tab-link disableRipple *ngFor="let link of links" [routerLink]="link.url"
         [active]="router.isActive(link.url, true)">
         {{link.ruta}}

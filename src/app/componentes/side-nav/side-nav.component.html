@@ -3,7 +3,8 @@
     <div class="col-lg-12">
       <mat-nav-list class="m-0">
         <a class="underline" mat-list-item *ngFor="let link of links" [routerLinkActiveOptions]="{ exact: true }"
-          routerLink="{{ link.url }}" routerLinkActive="active" (click)="onClose()">
+          routerLink="{{ link.url }}" routerLinkActive="active" #rla="routerLinkActive" [activated]="rla.isActive"
+          (click)="onClose()">
           <span class="nav-caption h5">{{
             link.ruta
             }}</span>

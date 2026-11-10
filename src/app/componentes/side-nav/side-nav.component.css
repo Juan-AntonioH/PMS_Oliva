@@ -13,6 +13,15 @@ mat-nav-list a.underline {
   position: relative;
 }
 
-.mat-mdc-list-item:hover{
+.mat-mdc-list-item:hover {
   background-color: rgba(72, 173, 143, 0.3);
+}
+
+::ng-deep .mat-mdc-list-item-interactive::before,
+::ng-deep .mat-mdc-list-item-interactive::after {
+  background-color: transparent !important;
+}
+
+.mat-mdc-nav-list {
+  --mat-list-active-indicator-color: rgba(72, 173, 143, 0.15);
 }

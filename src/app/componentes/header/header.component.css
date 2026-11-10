@@ -7,7 +7,7 @@ a {
 }
 
 ::ng-deep .mat-mdc-tab-link .mdc-tab__text-label {
-font-weight: bold;
+  font-weight: bold;
 }
 
 /* Cambiar el color del Active */
@@ -15,12 +15,19 @@ font-weight: bold;
   border-color: var(--primary) !important;
 }
 
-.mat-toolbar{
-  background-color:antiquewhite
+.mat-toolbar {
+  background-color: antiquewhite
 }
 
-.mdc-tab:hover{
+.mdc-tab:hover {
   background-color: rgba(72, 173, 143, 0.3);
-  color:rgb(#48ad8f);
+  color: #48ad8f;
   border-radius: 50px;
+}
+
+/* Fondo para el link activo */
+::ng-deep .mat-mdc-tab-link.mdc-tab--active {
+  background-color: rgba(72, 173, 143, 0.15);
+  border-radius: 4px;
+  /* Opcional: para suavizar las esquinas del fondo */
 }
